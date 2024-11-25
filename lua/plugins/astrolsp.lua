@@ -40,8 +40,17 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+      "solidity",
     },
-    -- customize language server configuration options passed to `lspconfig`
+    ["server-settings"] = {
+      solidity = {
+        cmd = { "nomicfoundation-solidity-language-server", "--stdio" },
+        filetypes = { "solidity" },
+        root_dir = require("lspconfig.util").root_pattern "foundry.toml",
+        single_file_support = true,
+      },
+    },
+    --customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },

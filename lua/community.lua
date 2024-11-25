@@ -8,10 +8,11 @@ return {
   { import = "astrocommunity.pack.lua" },
   -- import/override with your plugins folder
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  { import = "astrocommunity.colorscheme.gruvbox-nvim" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.elixir-phoenix" },
   { import = "astrocommunity.pack.go" },
-  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.docker" },
@@ -19,4 +20,8 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.pack.svelte" },
+  { import = "astrocommunity.pack.vue" },
+  { import = "astrocommunity.motion.mini-surround" },
+  { import = "astrocommunity.completion.codeium-vim" },
 }
